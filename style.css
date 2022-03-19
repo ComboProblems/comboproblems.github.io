@@ -1,0 +1,229 @@
+/* CSS style for Acadia Larsen's academic page
+
+Color scheme:
+  Dark Green: #3A6351;
+  Pale Teal: #5F939A;
+  Dull Khaki: #A0937D;
+  Bright Khaki: #F2EDD7;
+
+*/
+
+/* Document-wide tags */
+body {
+  margin: 0;
+  font-family: verdana, helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+
+/* item details */
+.deets {
+  margin-top: 0;
+  color: #A0937D;
+}
+
+.moreDeets {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+
+/* links */
+a {
+  text-decoration: none;
+  color: #5F939A;
+}
+
+a:hover {
+  color: #3A6351;
+  text-decoration: underline;
+}
+
+
+/* navigational bar */
+.navbar {
+  background-color: #3A6351;
+}
+
+.nav {
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.nav-btn {
+  background-color: #3A6351;
+  border: none;
+  color: #A0937D;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.nav-btn:hover {
+  color: #F2EDD7;
+}
+
+.nav-btn.active {
+  color: #F2EDD7;
+}
+
+/* When device is small, stack the nav bar buttons vertically and move nav bar close to the top */
+@media (max-width: 500px) {
+  .nav {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* main content viewer  */
+.tab-content {
+  margin: 100px auto;
+  width: 80%;
+}
+
+/* When device is small, make vertical gap (between nav bar and main content) smaller */
+@media (max-width: 500px) {
+  .tab-content {
+    margin-top: 30px;
+  }
+}
+
+/* home tab */
+.intro {
+  margin-top: 0;
+}
+
+.profile-pic {
+  background-color: #3A6351;
+  border-radius: 100%;
+  margin: auto 5%;
+  max-width: 120px;
+  width: 100%;
+}
+
+.vCard {
+  margin: 20% auto;
+  max-width: 550px;
+}
+
+.home-subsection {
+  margin-top: 50px;
+}
+
+.email {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.2rem;
+}
+
+/* research tab */
+.research-subsection {
+  margin-top: 50px;
+}
+
+.research-description {
+  margin-top: 50px;
+}
+
+.paper-title {
+  margin-top: 50px;
+}
+
+/* teaching tab */
+.teaching-heading {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.course {
+  color: black;
+  margin-left: 5%;
+}
+
+/* When device is small, stack the course name and code vertically */
+@media (max-width: 500px) {
+  .course {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+
+/* cv tab */
+.cv-nav-bar {
+  background-color: white;
+  padding: 15px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* this rule is just becuase the elements rendered by MathJax had a higher z-index, making it look very awkward when you scrolled.*/
+  z-index: 10;
+}
+
+.cv-section {
+  padding-top: 150px;
+}
+
+.cv-item {
+  margin-top: 35px;
+}
+
+.cv-pdf-div {
+  text-align: right;
+  font-size: 30px;
+  position: fixed;
+  bottom: 15%;
+  right: 7%;
+}
+
+.cv-pdf-btn {
+  background-color: #5F939A;
+  border-radius: 100%;
+  color: #F2EDD7;
+  float: left;
+  margin: 10px 0;
+  opacity: .75;
+  padding: 5px 15px;
+}
+
+.cv-pdf-btn:hover {
+  color: #F2EDD7;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.backToTop-div {
+  text-align: right;
+  font-size: 30px;
+  position: fixed;
+  bottom:7%;
+  right: 7%;
+}
+
+.backToTop-btn {
+  background-color: #5F939A;
+  border-radius: 100%;
+  color:  #F2EDD7;
+  opacity: .75;
+  padding: 5px 15px;
+}
+
+.backToTop-btn:hover {
+  color:  #F2EDD7;
+  opacity: 1;
+}
+
+.update-date {
+  margin-top: 50px;
+  color: #A0937D;
+}
+
+/* footer */
+footer {
+  background-color: #3A6351;
+  color: #A0937D;
+  padding: 50px 10%;
+}
+
+/* for testing purposes*/
+.test {
+  background-color: red;
+}
